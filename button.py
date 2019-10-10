@@ -1,15 +1,15 @@
 from tkinter import *
-import time
- 
+
+flag=0
 def msgShow():
     label1 = Label(window, text="Label 1 中文顯示", 
               bg="lightyellow", 
               width =15, 
               font="Helvetica 28 bold italic") 
     label1.pack(side=TOP)          
-    #time.sleep(3)
-    window.after(3000, window.destroy)
-   
+    
+    label1.after(3000, label1.destroy)
+    
 
 window = Tk()
 window.title("Button Example")  
