@@ -35,7 +35,7 @@ label.pack(padx =10, pady =10)
 # label = Label(tk)   # initialize image panel
 
 tk.config( cursor = "arrow" )
-btn = Button(tk, text = " 點贊!" , command =take_snapshot)
+btn = Button(tk, text = " 照相" , command =take_snapshot)
 btn.pack( fill = "both" , expand = True , padx = 10 , pady = 10 )
 
 video_loop()
