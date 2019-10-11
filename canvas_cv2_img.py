@@ -13,7 +13,6 @@ canvas = Canvas(tk, width = width+40 , height = height+30, bg="grey90")
 # Use PIL (Pillow) to convert the NumPy ndarray to a PhotoImage
 photo = ImageTk.PhotoImage(image = Image.fromarray(cv_img))
 # Add a PhotoImage to the Canvas
-canvas.create_image(20, 15, image=photo, anchor=NW) #NW North West
+canvas.create_image(20, 15, image=photo, anchor=NW) #anchor=NW North West or anchor=CENTER or ...
 canvas.pack()
 tk.mainloop()
-
